@@ -29,6 +29,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 </head>
 
 <body>
@@ -80,7 +81,7 @@
                      </div>
                 </div>				
                 <a href="team.html" class="nav-item nav-link">Our Alliances</a> 
-                <a href="galleries.html" class="nav-item nav-link">Gallery</a>				
+                <a href="Gallery.html" class="nav-item nav-link">Gallery</a>				
                 <a href="contact.html" class="nav-item nav-link">Contact Us</a>
             </div>
             <div class="h-100 d-lg-inline-flex align-items-center d-none">
@@ -110,7 +111,17 @@
 
 
     <!-- Service Start -->
-     <div class="container-xxl py-5">
+	<div id="MulchFilmSheet" class="w3-modal">
+		<div class="w3-modal-content">
+		  <div class="w3-container">
+			<span onclick="document.getElementById('MulchFilmSheet').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+			<p id="details">Mulch Film Sheet</p>        
+		  </div>
+		</div>
+	</div>
+	
+    <div class="container-xxl py-5">
+	
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <h1 class="display-6 mb-5">We Provide Professional Import and Export Services</h1>
@@ -119,9 +130,9 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item">
                         <img class="img-fluid" src="img/biodegradable_mulch_film_sheet.jpg" alt="">
-                        <div class="d-flex align-items-center bg-light">
-                            <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Mulch Film Sheet</a>
+                        <div class="d-flex align-items-center bg-light">							
+								<div class="service-icon flex-shrink-0 "></div>
+								<a class="h6 mx-4 mb-0" onclick="ShowDetails('MulchFilmSheet')">Mulch Film Sheet</a>																						
                         </div>
                     </div>
                 </div>
@@ -130,7 +141,7 @@
                         <img class="img-fluid" src="img/flat_inline_emitting_pipe.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Flat Inline Emitting Pipe</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('FlatInlineEmittingPipe')">Flat Inline Emitting Pipe</a>
                         </div>
                     </div>
                 </div>
@@ -139,7 +150,7 @@
                         <img class="img-fluid" src="img/agriculture_filters.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Irrigation Filters</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationFilters')">Irrigation Filters</a>
                         </div>
                     </div>
                 </div>
@@ -148,7 +159,7 @@
                         <img class="img-fluid" src="img/sprinkler.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Sprinkler</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('Sprinkler')">Sprinkler</a>
                         </div>
                     </div>
                 </div>
@@ -157,7 +168,7 @@
                         <img class="img-fluid" src="img/stretch_film.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Stretch Film</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('StretchFilm')">Stretch Film</a>
                         </div>
                     </div>
                 </div>
@@ -231,6 +242,25 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+	
+	<script>
+        function ShowDetails(details) {
+			if (details == "MulchFilmSheet")			
+				details = "Mulch Film Sheets protect crops by reducing weed growth, retaining soil moisture, and enhancing soil temperature. Designed for superior strength and UV resistance, they help boost yield and promote healthier plant growth."
+			else if (details == "FlatInlineEmittingPipe")
+				details = "Flat Inline Emitting Pipes deliver uniform water distribution with precision-engineered drippers embedded inside the pipe. Ideal for row crops, orchards, and greenhouses, they ensure efficient irrigation with reduced water loss."
+			else if (details == "IrrigationFilters")
+				details = "Irrigation Filters protect your system from clogging by efficiently removing sand, silt, and debris from the water. Designed for high performance and durability, they ensure smooth flow and longer life of your irrigation setup."
+			else if (details == "Sprinkler")
+				details = "Sprinklers provide uniform water coverage across fields, lawns, and gardens, ensuring healthy plant growth. Built for durability and smooth rotation, they deliver efficient irrigation with minimal water wastage."
+			else if (details == "StretchFilm")
+				details = "Stretch Film provides secure, tight wrapping for pallets and packages, protecting goods from dust, moisture, and damage during transport. Its high stretchability ensures maximum load stability with minimal material use."
+
+			
+            document.getElementById("details").innerHTML = details;
+			document.getElementById('MulchFilmSheet').style.display='block'
+        }
+    </script>
 </body>
 
 </html>

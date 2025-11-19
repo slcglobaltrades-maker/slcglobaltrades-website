@@ -29,6 +29,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 </head>
 
 <body>
@@ -37,6 +38,19 @@
         <div class="spinner-grow text-primary" role="status"></div>
     </div>
     <!-- Spinner End -->
+	
+	<div id="MulchFilmSheet" class="w3-modal">
+		<div class="w3-modal-content w3-display-Middle w3-animate-middle w3-card-4 w3-round w3-border w3-border-dark-grey w3-padding-large" style="position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);" style="max-width:400px;">
+		  <div class="w3-container">
+			<span onclick="document.getElementById('MulchFilmSheet').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+			<p id="details">Jigs & Fixtures</p>			
+		  </div>
+		  </br>		  
+		  <div>
+		  <button class="w3-button w3-round w3-border w3-border-dark-grey w3-hover-shadow  w3-display-bottommiddle" onclick="document.getElementById('MulchFilmSheet').style.display='none'">Close</button>
+		  </div>		  
+		</div>		
+	</div>
 
 
     <!-- Topbar Start -->
@@ -80,7 +94,7 @@
                      </div>
                 </div>				
                 <a href="team.html" class="nav-item nav-link">Our Alliances</a> 
-                <a href="galleries.html" class="nav-item nav-link">Gallery</a>				
+                <a href="Gallery.html" class="nav-item nav-link">Gallery</a>				
                 <a href="contact.html" class="nav-item nav-link">Contact Us</a>
             </div>
             <div class="h-100 d-lg-inline-flex align-items-center d-none">
@@ -124,7 +138,7 @@
                         <img class="img-fluid" src="img/Product 1.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Jigs & Fixtures 1</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('JigsFixtures')">Jigs & Fixtures 1</a>
                         </div>
                     </div>
                 </div>
@@ -133,7 +147,7 @@
                         <img class="img-fluid" src="img/Product 2.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Jigs & Fixtures 2</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('JigsFixtures')">Jigs & Fixtures 2</a>
                         </div>
                     </div>
                 </div>
@@ -142,7 +156,7 @@
                         <img class="img-fluid" src="img/Product 3.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Jigs & Fixtures 3</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('JigsFixtures')">Jigs & Fixtures 3</a>
                         </div>
                     </div>
                 </div>
@@ -151,7 +165,7 @@
                         <img class="img-fluid" src="img/Product 4.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Jigs & Fixtures 4</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('JigsFixtures')">Jigs & Fixtures 4</a>
                         </div>
                     </div>
                 </div>
@@ -160,7 +174,7 @@
                         <img class="img-fluid" src="img/Product 5.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Jigs & Fixtures 5</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('JigsFixtures')">Jigs & Fixtures 5</a>
                         </div>
                     </div>
                 </div>
@@ -170,7 +184,7 @@
                         <img class="img-fluid" src="img/Product 6.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Jigs & Fixtures 6</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('JigsFixtures')">Jigs & Fixtures 6</a>
                         </div>
                     </div>
                 </div>
@@ -180,7 +194,7 @@
                         <img class="img-fluid" src="img/Product 7.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Jigs & Fixtures 7</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('JigsFixtures')">Jigs & Fixtures 7</a>
                         </div>
                     </div>
                 </div>
@@ -190,7 +204,7 @@
                         <img class="img-fluid" src="img/Product 8.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Jigs & Fixtures 8</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('JigsFixtures')">Jigs & Fixtures 8</a>
                         </div>
                     </div>
                 </div>				
@@ -200,7 +214,7 @@
                         <img class="img-fluid" src="img/Product 9.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Testing Bed Trolleys with Electric Panel</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('Trolleys')">Testing Bed Trolleys with Electric Panel</a>
                         </div>
                     </div>
                 </div>				
@@ -262,6 +276,19 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+	
+	<script>
+        function ShowDetails(details) {
+			if (details == "Trolleys")			
+				details = "Our Testing Bed Trolleys with Electric Panels are engineered for precision testing, seamless mobility, and enhanced operator safety. Equipped with a robust panel layout, wiring management, and strong fabrication, they streamline inspection and quality-control workflows."
+			else 
+				details = "We design and manufacture high-precision Jigs & Fixtures tailored to your production needs. With robust construction and flawless accuracy, our solutions enhance machining performance, reduce errors, and boost overall productivity."
+
+			
+            document.getElementById("details").innerHTML = details;
+			document.getElementById('MulchFilmSheet').style.display='block'
+        }
+    </script>
 </body>
 
 </html>

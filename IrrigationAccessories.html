@@ -29,6 +29,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 </head>
 
 <body>
@@ -80,7 +81,7 @@
                      </div>
                 </div>				
                 <a href="team.html" class="nav-item nav-link">Our Alliances</a> 
-                <a href="galleries.html" class="nav-item nav-link">Gallery</a>				
+                <a href="Gallery.html" class="nav-item nav-link">Gallery</a>				
                 <a href="contact.html" class="nav-item nav-link">Contact Us</a>
             </div>
             <div class="h-100 d-lg-inline-flex align-items-center d-none">
@@ -108,6 +109,18 @@
     </div>
     <!-- Page Header End -->
 
+	<div id="MulchFilmSheet" class="w3-modal">
+		<div class="w3-modal-content w3-display-Middle w3-animate-middle w3-card-4 w3-round w3-border w3-border-dark-grey w3-padding-large" style="position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);" style="max-width:400px;">
+		  <div class="w3-container">
+			<span onclick="document.getElementById('MulchFilmSheet').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+			<p id="details">Irrigation Accessories</p>			
+		  </div>
+		  </br>		  
+		  <div>
+		  <button class="w3-button w3-round w3-border w3-border-dark-grey w3-hover-shadow  w3-display-bottommiddle" onclick="document.getElementById('MulchFilmSheet').style.display='none'">Close</button>
+		  </div>		  
+		</div>		
+	</div>
 
     <!-- Service Start -->
 	
@@ -122,7 +135,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image1.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image1</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image1</a>
                         </div>
                     </div>
                 </div>
@@ -131,7 +144,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image2.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image2</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image2</a>
                         </div>
                     </div>
                 </div>
@@ -140,7 +153,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image3.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image3</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image3</a>
                         </div>
                     </div>
                 </div>
@@ -149,7 +162,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image4.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image4</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image4</a>
                         </div>
                     </div>
                 </div>
@@ -158,7 +171,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image5.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image5</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image5</a>
                         </div>
                     </div>
                 </div>
@@ -167,7 +180,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image6.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image6</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image6</a>
                         </div>
                     </div>
                 </div>
@@ -176,7 +189,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image7.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image7</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image7</a>
                         </div>
                     </div>
                 </div>
@@ -185,7 +198,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image8.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image8</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image8</a>
                         </div>
                     </div>
                 </div>
@@ -194,7 +207,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image9.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image9</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image9</a>
                         </div>
                     </div>
                 </div>
@@ -203,7 +216,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image10.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image10</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image10</a>
                         </div>
                     </div>
                 </div>
@@ -212,7 +225,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image11.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image11</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image11</a>
                         </div>
                     </div>
                 </div>
@@ -221,7 +234,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image12.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image12</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image12</a>
                         </div>
                     </div>
                 </div>
@@ -230,7 +243,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image13.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image13</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image13</a>
                         </div>
                     </div>
                 </div>
@@ -239,7 +252,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image14.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image14</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image14</a>
                         </div>
                     </div>
                 </div>
@@ -248,7 +261,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image15.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image15</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image15</a>
                         </div>
                     </div>
                 </div>
@@ -257,7 +270,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image16.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image16</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image16</a>
                         </div>
                     </div>
                 </div>
@@ -266,7 +279,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image17.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image17</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image17</a>
                         </div>
                     </div>
                 </div>
@@ -275,7 +288,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image18.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image18</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image18</a>
                         </div>
                     </div>
                 </div>
@@ -284,7 +297,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image19.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image19</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image19</a>
                         </div>
                     </div>
                 </div>
@@ -293,7 +306,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image21.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image21</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image21</a>
                         </div>
                     </div>
                 </div>
@@ -302,7 +315,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image22.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image22</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image22</a>
                         </div>
                     </div>
                 </div>
@@ -311,7 +324,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image23.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image23</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image23</a>
                         </div>
                     </div>
                 </div>
@@ -320,7 +333,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image24.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image24</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image24</a>
                         </div>
                     </div>
                 </div>
@@ -329,7 +342,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image25.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image25</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image25</a>
                         </div>
                     </div>
                 </div>
@@ -338,7 +351,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image26.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image26</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image26</a>
                         </div>
                     </div>
                 </div>
@@ -347,7 +360,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image27.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image27</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image27</a>
                         </div>
                     </div>
                 </div>
@@ -356,7 +369,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image28.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image28</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image28</a>
                         </div>
                     </div>
                 </div>
@@ -365,7 +378,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image29.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image29</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image29</a>
                         </div>
                     </div>
                 </div>
@@ -374,7 +387,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image30.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image30</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image30</a>
                         </div>
                     </div>
                 </div>
@@ -383,7 +396,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image31.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image31</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image31</a>
                         </div>
                     </div>
                 </div>
@@ -392,7 +405,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image32.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image32</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image32</a>
                         </div>
                     </div>
                 </div>
@@ -401,7 +414,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image33.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image33</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image33</a>
                         </div>
                     </div>
                 </div>
@@ -410,7 +423,7 @@
                         <img class="img-fluid" src="img/AccesoriesImages/image34.jpg" alt="">
                         <div class="d-flex align-items-center bg-light">
                             <div class="service-icon flex-shrink-0 "></div>
-                            <a class="h6 mx-4 mb-0" href="">Image34</a>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image34</a>
                         </div>
                     </div>
                 </div>
@@ -419,7 +432,7 @@
 						<img class="img-fluid" src="img/AccesoriesImages/image35.jpg" alt="">
 						<div class="d-flex align-items-center bg-light">
 							<div class="service-icon flex-shrink-0 "></div>
-							<a class="h6 mx-4 mb-0" href="">Image35</a>
+							<a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image35</a>
 						</div>
 					</div>
 				</div>
@@ -429,7 +442,7 @@
 						<img class="img-fluid" src="img/AccesoriesImages/image36.jpg" alt="">
 						<div class="d-flex align-items-center bg-light">
 							<div class="service-icon flex-shrink-0 "></div>
-							<a class="h6 mx-4 mb-0" href="">Image36</a>
+							<a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image36</a>
 						</div>
 					</div>
 				</div>
@@ -439,7 +452,7 @@
 						<img class="img-fluid" src="img/AccesoriesImages/image37.jpg" alt="">
 						<div class="d-flex align-items-center bg-light">
 							<div class="service-icon flex-shrink-0 "></div>
-							<a class="h6 mx-4 mb-0" href="">Image37</a>
+							<a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image37</a>
 						</div>
 					</div>
 				</div>
@@ -449,7 +462,7 @@
 						<img class="img-fluid" src="img/AccesoriesImages/image38.jpg" alt="">
 						<div class="d-flex align-items-center bg-light">
 							<div class="service-icon flex-shrink-0 "></div>
-							<a class="h6 mx-4 mb-0" href="">Image38</a>
+							<a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image38</a>
 						</div>
 					</div>
 				</div>
@@ -459,7 +472,7 @@
 						<img class="img-fluid" src="img/AccesoriesImages/image39.jpg" alt="">
 						<div class="d-flex align-items-center bg-light">
 							<div class="service-icon flex-shrink-0 "></div>
-							<a class="h6 mx-4 mb-0" href="">Image39</a>
+							<a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image39</a>
 						</div>
 					</div>
 				</div>
@@ -469,7 +482,7 @@
 						<img class="img-fluid" src="img/AccesoriesImages/image40.jpg" alt="">
 						<div class="d-flex align-items-center bg-light">
 							<div class="service-icon flex-shrink-0 "></div>
-							<a class="h6 mx-4 mb-0" href="">Image40</a>
+							<a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image40</a>
 						</div>
 					</div>
 				</div>
@@ -479,7 +492,7 @@
 						<img class="img-fluid" src="img/AccesoriesImages/image41.jpg" alt="">
 						<div class="d-flex align-items-center bg-light">
 							<div class="service-icon flex-shrink-0 "></div>
-							<a class="h6 mx-4 mb-0" href="">Image41</a>
+							<a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image41</a>
 						</div>
 					</div>
 				</div>
@@ -489,7 +502,7 @@
 						<img class="img-fluid" src="img/AccesoriesImages/image42.jpg" alt="">
 						<div class="d-flex align-items-center bg-light">
 							<div class="service-icon flex-shrink-0 "></div>
-							<a class="h6 mx-4 mb-0" href="">Image42</a>
+							<a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image42</a>
 						</div>
 					</div>
 				</div>
@@ -499,7 +512,7 @@
 						<img class="img-fluid" src="img/AccesoriesImages/image43.jpg" alt="">
 						<div class="d-flex align-items-center bg-light">
 							<div class="service-icon flex-shrink-0 "></div>
-							<a class="h6 mx-4 mb-0" href="">Image43</a>
+							<a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image43</a>
 						</div>
 					</div>
 				</div>
@@ -509,7 +522,7 @@
 						<img class="img-fluid" src="img/AccesoriesImages/image44.jpg" alt="">
 						<div class="d-flex align-items-center bg-light">
 							<div class="service-icon flex-shrink-0 "></div>
-							<a class="h6 mx-4 mb-0" href="">Image44</a>
+							<a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image44</a>
 						</div>
 					</div>
 				</div>
@@ -519,7 +532,7 @@
 						<img class="img-fluid" src="img/AccesoriesImages/image45.jpg" alt="">
 						<div class="d-flex align-items-center bg-light">
 							<div class="service-icon flex-shrink-0 "></div>
-							<a class="h6 mx-4 mb-0" href="">Image45</a>
+							<a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image45</a>
 						</div>
 					</div>
 				</div>
@@ -529,7 +542,7 @@
 						<img class="img-fluid" src="img/AccesoriesImages/image46.jpg" alt="">
 						<div class="d-flex align-items-center bg-light">
 							<div class="service-icon flex-shrink-0 "></div>
-							<a class="h6 mx-4 mb-0" href="">Image46</a>
+							<a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image46</a>
 						</div>
 					</div>
 				</div>
@@ -539,7 +552,7 @@
 						<img class="img-fluid" src="img/AccesoriesImages/image47.jpg" alt="">
 						<div class="d-flex align-items-center bg-light">
 							<div class="service-icon flex-shrink-0 "></div>
-							<a class="h6 mx-4 mb-0" href="">Image47</a>
+							<a class="h6 mx-4 mb-0" onclick="ShowDetails('IrrigationAccessories')">Image47</a>
 						</div>
 					</div>
 				</div>
@@ -603,6 +616,18 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+		<script>
+        function ShowDetails(details) {
+			if (details == "Trolleys")			
+				details = "Our Testing Bed Trolleys with Electric Panels are engineered for precision testing, seamless mobility, and enhanced operator safety. Equipped with a robust panel layout, wiring management, and strong fabrication, they streamline inspection and quality-control workflows."
+			else 
+				details = "Our comprehensive range of Irrigation Accessories delivers the perfect support for drip and sprinkler systems. From connectors and couplers to filters and valves, each component is engineered for long life, easy installation, and dependable field performance."
+
+			
+            document.getElementById("details").innerHTML = details;
+			document.getElementById('MulchFilmSheet').style.display='block'
+        }
+    </script>
 </body>
 
 </html>

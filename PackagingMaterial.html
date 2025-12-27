@@ -226,6 +226,25 @@
                     </div>
                 </div>
 				
+				<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div >
+                        <img class="img-fluid" src="img/PackagingMaterial/ziplockbags.png" alt="">
+                        <div class="d-flex align-items-center bg-light" style="margin-top: 20px;">
+                            <div class="service-icon flex-0 "></div>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('ziplockbags')">LDPE Zip Lock Bags</a>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div >
+                        <img class="img-fluid" src="img/PackagingMaterial/Esd_static_shielding_bags.png" alt="">
+                        <div class="d-flex align-items-center bg-light" style="margin-top: 20px;">
+                            <div class="service-icon flex-0 "></div>
+                            <a class="h6 mx-4 mb-0" onclick="ShowDetails('Esd_static_shielding_bags')">Esd Static Shielding Bags</a>
+                        </div>
+                    </div>
+                </div>
+				
 				
             </div>
         </div>
@@ -307,6 +326,10 @@
 				details = "We are continuously engaged in offering a wide range of Triple Laminated Aluminium Pouches that is widely used to foil food items to keep it warm and safe from moisture and dust. These pouches are designed with utmost precision by our adept professional using quality tested aluminum in tandem with the set industry standard and guidelines. Our quality controllers examine these pouches against varied parameters to ensure their flawlessness."
 			else if (details == "TripleLaminatedBags")
 				details = "Triple laminated bags are made with Low Density Polyethylene which is widely used to keep packaging products safe from the damaging effects of moisture. Bags are used as the most effective packaging solution for pharmaceutical and drug products. These bags are highly reliable in controlling the moisture from pharma or drug packaging products and protected them for the long period."
+			else if (details == "ziplockbags")
+				details = "Made from high-quality LDPE for durable, flexible, and clear packaging. Resealable ziplock closure ensures secure storage and easy reuse. Ideal for packing small parts, accessories, food items, and samples. Lightweight, moisture-resistant, and available in multiple sizes."
+			else if (details == "Esd_static_shielding_bags")
+				details = "Provides superior protection against electrostatic discharge (ESD) for sensitive electronics. Metalized shielding creates a Faraday cage to block static and EMI. Ideal for safe storage and transportation of PCBs, ICs, and electronic components. Durable, lightweight, and compliant with international ESD standards."
 				
             document.getElementById("details").innerHTML = details;
 			document.getElementById('MulchFilmSheet').style.display='block'
